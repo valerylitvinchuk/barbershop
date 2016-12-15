@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=latin,cyrillic-ext">
+    <!-- <base href="http://barbershop-borodinski.ru/litvinchuk/barbershop/"> -->
+    <title>Барбершоп «Бородинский»</title>
+  </head>
+  <body class="index-body">
+    <header class="main-header">
+      <div class="container clearfix">
+        <nav class="main-navigation">
+          <ul>
+            <li class="active-item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="price.html">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="shop.html">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a href="#" class="login">Вход</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container main-container">
+      <figure class="logo">
+        <img src="img/logo.png" width="368" height="165" alt="logo">
+      </figure>
+      <section class="features-row clearfix">
+        <div class="features-item">
+          <div class="features-title">Быстро</div>
+          <p>Мы&nbsp;делаем свою работу быстро! Два часа пролетят незаметно и&nbsp;вы&nbsp;&mdash; счастливый обладатель стильной стрижки-минутки!</p>
+        </div>
+        <div class="features-item">
+          <div class="features-title">Круто</div>
+          <p>Забудьте, как вы&nbsp;стриглись раньше.<br>
+          Мы&nbsp;сделаем из&nbsp;вас звезду футбола или кино! Во&nbsp;всяком случае внешне.</p>
+        </div>
+        <div class="features-item">
+          <div class="features-title">Дорого</div>
+          <p>Наши мастера&nbsp;&mdash; профессионалы своего дела и&nbsp;не&nbsp;могут стоить дешево. К&nbsp;тому&nbsp;же, разве цена не&nbsp;дает определенный статус?</p>
+        </div>
+      </section>
+
+      <div class="index-content clearfix">
+        <section class="content-column-left">
+          <h2 class="content-column-title">Новости</h2>
+          <ul class="news-preview">
+            <li>
+              Нам наконец завезли Ягермайстер! Теперь вы<br>
+              можете пропустить стаканчик во время стрижки<br>
+              <time datetime="2013-09-25">25 сентября</time>
+            </li>
+            <li>
+              В&nbsp;нашей команде пополнение, Борис &laquo;Бритва&raquo; Стригунец, обладатель множества титулов и<br>наград пополнил наши стройные ряды<br>
+              <time datetime="2013-09-19">19 сентября</time>
+            </li>
+          </ul>
+          <a href="#" class="btn">Все новости</a>
+        </section>
+        <section class="content-column-right">
+          <h2 class="content-column-title">Фотогалерея</h2>
+          <div class="main-gallery">
+            <figure class="gallery-content">
+              <img src="img/photo.jpg" width="286" height="164" alt="photo">
+            </figure>
+            <button class="btn gallery-prev" disabled>Назад</button>
+            <button class="btn gallery-next">Вперед</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="index-content clearfix">
+        <section class="content-column-left">
+          <div class="main-contacts">
+            <h2 class="content-column-title">Контактная информация</h2>
+            <p class="address">
+              Barbershop «Borodinski»<br>
+              Адрес: г. Санкт-Петербург, ул. Собаки Павлова, д. 13<br>
+              Телефон: +7 (495) 666-02-666
+            </p>
+            <p class="time">
+              Время работы:<br>
+              пн — пт: с 10:00 до 22:00<br>
+              сб — вс: с 10:00 до 19:00
+            </p>
+            <a href="#" class="btn open-map">Как проехать</a>
+            <a href="#" class="btn">Обратная связь</a>
+          </div>
+        </section>
+        <section class="content-column-right">
+          <div class="appointment-form">
+            <h2 class="content-column-title">Записаться</h2>
+            <p>Укажите желаемую дату и&nbsp;время и&nbsp;мы&nbsp;свяжемся с&nbsp;вами для подтверждения брони</p>
+            <form action="/echo" method="post">
+              <input type="date" name="date" value="" placeholder="Дата">
+              <input type="time" name="time" value="" placeholder="Время">
+              <input type="text" name="name" value="" placeholder="Ваше имя">
+              <input type="tel" name="phone" value="" placeholder="Телефон">
+              <button type="submit" class="btn">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <div class="container justify">
+        <section class="footer-contacts">
+          Barbershop «Borodinski»<br>
+          адрес: г. Санкт-Петербург, ул. Собаки Павлова, д. 13<br>
+          <a href="#">Как нас найти?</a><br>
+          телефон: +7 (495) 666-02-666
+        </section>
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+          <a href="#" class="social-btn icon-vk"></a>
+          <a href="#" class="social-btn icon-fb"></a>
+          <a href="#" class="social-btn icon-instagram"></a>
+        </section>
+        <section class="footer-copyright">
+          <p>Дизайн сайта:</p>
+          <a href="#" class="btn">glukhanko.ru</a>
+        </section>
+      </div>
+    </footer>
+
+    <div class="modal-content">
+      <div class="modal-content-close">закрыть</div>
+      <h2 class="modal-content-title">Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль.</p>
+      <form class="login-form" action="/echo" method="post">
+        <input type="text" class="icon-user" name="login" placeholder="Логин" required>
+        <input type="password" class="icon-password" name="password" placeholder="Пароль" required>
+        <input type="checkbox" name="remember" id="remember-me">
+        <label for="remember-me">Запомните меня</label>
+        <a href="#" class="restore">Я забыл пароль!</a>
+        <button type="submit" class="btn">Войти</button>
+      </form>
+    </div>
+
+    <div class="modal-content-map">
+      <div class="modal-content-close">закрыть</div>
+      <div id="yandex-map"></div>
+    </div>
+
+    <script>
+      var link = document.querySelector(".login");
+      var popup = document.querySelector(".modal-content");
+      var close = document.querySelector(".modal-content-close");
+      var form = popup.querySelector("form");
+      var login = popup.querySelector("[name=login]");
+      var password = popup.querySelector("[name=password]");
+      var storage = localStorage.getItem("login");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+        if (storage) {
+          login.value = storage;
+          password.focus();
+        } else {
+          login.focus();
+        }
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+      });
+
+      form.addEventListener("submit", function(event) {
+        if (!(login.value && password.value)) {
+          event.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.classList.add("modal-error");
+        } else {
+          localStorage.setItem("login", login.value);
+        }
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode == 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+          }
+        }
+      });
+
+      var mapOpen = document.querySelector(".open-map");
+      var mapPopup = document.querySelector(".modal-content-map");
+      var mapClose = mapPopup.querySelector(".modal-content-close");
+
+      mapOpen.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.add("modal-content-show");
+      });
+
+      mapClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.remove("modal-content-show");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode == 27) {
+          if (mapPopup.classList.contains("modal-content-show")) {
+            mapPopup.classList.remove("modal-content-show");
+          }
+        }
+      });
+    </script>
+    <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=1_2j0Q0qdC5F9gowbEV-E-W1Fx3h7sLj&width=766&height=561&id=yandex-map"></script>
+  </body>
+</html>

@@ -1,0 +1,954 @@
+/*==========================================================================
+  ОБЩИЕ СТИЛИ
+  ========================================================================== */
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  background-image: url('../img/grain-light.jpg');
+  font-family: 'PT Sans Narrow';
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+h1 {
+  margin-top: 0;
+  font-size: 30px;
+}
+h3 {
+  margin-left: 15px;
+}
+h3 a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+.index-body {
+  background: #000 url('../img/background.jpg') no-repeat center top;
+}
+/*==========================================================================
+  ХЕДЕР
+  ========================================================================== */
+.main-header {
+  padding: 0;
+  background-color: #000;
+}
+.main-header a {
+  color: #fff;
+  padding: 25px 20px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding-right: 22px;
+}
+.main-header a:hover{
+  background: #242424;
+}
+/*Меню
+  ========================================================================== */
+.main-navigation {
+  float: left;
+  margin: 0;
+  font-size: 0;
+}
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+}
+.main-navigation li {
+  display: inline-block;
+  padding: 0;
+  vertical-align: middle;
+}
+.main-navigation .active-item a {
+  position: relative;
+}
+.main-navigation .active-item a:after{
+  content: '';
+  display: block;
+  height: 5px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+}
+/*Вход
+  ========================================================================== */
+.user-block {
+  float: right;
+}
+.user-block a:before {
+  height: 16px;
+  content: url('../img/sign-in.png');
+  margin-right: 15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+.user-block a:hover:before {
+  height: 16px;
+  content: url('../img/sign-in-white.png');
+  margin-right: 15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+/*==========================================================================
+  ХЛЕБНЫЕ КРОШКИ
+  ========================================================================== */
+.breadcrumbs {
+  padding: 0;
+}
+.breadcrumbs a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 14px;
+}
+.breadcrumbs li{
+  display: inline-block;
+  vertical-align: middle;
+}
+.breadcrumbs li:not(.first-crumb):before {
+  content: '';
+  display: inline-block;
+  vertical-align: baseline;
+  background-color: #000;
+  width: 8px;
+  height: 8px;
+  margin: 0 auto;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.breadcrumbs li:first-child a {
+  margin-left: 0px;
+}
+.active a {
+  color: #aba9a7;
+  cursor: default;
+  pointer-events: none;
+}
+/*==========================================================================
+  ФУТЕР
+  ========================================================================== */
+.main-footer {
+  padding: 55px 0 20px;
+  background-color: #242424;
+  background-image: url('../img/grain-dark.jpg');
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+.main-footer a {
+  color: #fff;
+}
+.main-footer section{
+  display: inline-block;
+  vertical-align: top;
+}
+.footer-contacts {
+  line-height: 25px;
+  text-align: left;
+}
+.footer-contacts a:hover {
+  text-decoration: none;
+}
+.footer-social {
+  text-align: center;
+}
+.footer-social p {
+  margin-top: 5px;
+  margin-bottom: 17px;
+}
+.social-btn {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 25px;
+  padding: 5px;
+  background-color: #000;
+  margin-right: 5px;
+}
+.social-btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+.footer-copyright {
+  text-align: center;
+}
+.footer-copyright p {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.footer-copyright a {
+  display: block;
+  padding: 14px 20px;
+  background: #000;
+  width: 100px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+.footer-copyright a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.justify{
+  text-align: justify;
+  text-align-last: justify;
+}
+.justify:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+/*==========================================================================
+  ГЛАВНАЯ
+  ========================================================================== */
+.main-container {
+  margin: 0 auto;
+  padding-top: 59px;
+  padding-bottom: 28px;
+}
+.logo {
+  width: 368px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+.features-row {
+  margin-bottom: 63px;
+}
+.features-item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  color: #fff;
+  text-align: center;
+}
+.features-item:last-child {
+  margin-right: 0;
+}
+.features-title {
+  font-size: 30px;
+}
+.features-title:after {
+  content: '';
+  display: block;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.features-item p {
+  line-height: 25px;
+}
+.index-content {
+  margin-bottom: 35px;
+  padding: 53px 80px;
+  background: url('../img/index-content-shadow.png') no-repeat center,
+  #fff url('../img/grain-light.jpg');
+  line-height: 25px;
+}
+.index-content a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #000;
+  width: 140px;
+  padding: 15px 0;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 5px;
+}
+.index-content a:hover {
+  background-color: #663d15;
+}
+.content-column-left {
+  float: left;
+  width: 326px;
+}
+.content-column-right {
+  float: right;
+  width: 300px;
+}
+.index-content h2 {
+  margin: 0;
+  font-size: 30px;
+}
+.news-preview {
+  list-style-type: none;
+  padding:33px 0 0;
+  margin:0;
+}
+.news-preview li {
+  margin-bottom: 20px;
+}
+.news-preview time {
+  font-weight: normal;
+  text-transform: none;
+}
+.main-gallery {
+  padding-top: 40px;
+}
+.gallery-content {
+  margin: 0;
+  border: 7px solid #fff;
+  width: 286px;
+  height: 164px;
+  margin-bottom: 35px;
+}
+.main-contacts .address {
+  margin-top: 33px;
+}
+.main-contacts .time {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.main-contacts a {
+  margin-top: 40px;
+}
+.appointment-form p {
+  margin-top: 33px;
+  margin-bottom: 23px;
+}
+/*Кнопки
+  ========================================================================== */
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 33px;
+  text-transform: uppercase;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-right: 17px;
+}
+.btn:hover,
+.btn:active {
+  background: #663d15;
+}
+.btn:disabled {
+  cursor: default;
+  opacity: .5;
+}
+.btn:disabled:hover {
+  background: #000;
+}
+.main-gallery .btn {
+  width: 140px;
+}
+.main-gallery .btn:last-child {
+  margin-right: 0;
+}
+.main-contacts .btn:last-child {
+  margin-right: 0;
+}
+/*Форма
+  ========================================================================== */
+.appointment-form  input {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 106px;
+  padding: 10px 15px;
+  border: 2px solid #000;
+  text-transform: uppercase;
+  color: #000;
+  background: #f9f6f3;
+  outline: none;
+}
+.appointment-form  input:focus {
+  border: 2px solid #663d15;
+}
+.appointment-form  input:nth-child(2n) {
+  margin-right: 0;
+}
+.appointment-form .btn {
+  margin-top: 12px;
+  clear: both;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/*Модальное окно
+  ========================================================================== */
+.modal-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 300px;
+  margin-top: 150px;
+  margin-left: -230px;
+  padding: 50px 80px;
+  color: black;
+  background: #f8f3f0 url('../img/grain-light.jpg');
+  box-shadow: 0 30px 50px rgba(0,0,0,.7);
+}
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.modal-content-show {
+  display: block;
+  -webkit-animation: bounce 0.6s;
+  animation: bounce 0.6s;
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+@-webkit-keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+.modal-error {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
+}
+.modal-content-close {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  cursor: pointer;
+  background: url('../img/sprite.png') no-repeat center;
+  background-position: -10px -140px;
+}
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 42px;
+}
+.modal-content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+.modal-content .login-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 236px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  padding-right: 40px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000;
+  border: 2px solid #000;
+  outline: none;
+  background: #f9f6f3;
+}
+.login-form input:focus {
+  border-color: #663d15;
+}
+.login-form input.icon-user {
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: 100% 0px;
+}
+.login-form input.icon-password {
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: 100% -45px;
+}
+.login-form .restore {
+  float: right;
+  color: #000;
+}
+.login-form .btn {
+  width: 100%;
+  margin-top: 15px;
+}
+.login-form input[type="checkbox"] {
+  display: none;
+}
+.login-form input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  padding-top: 3px;
+  cursor: pointer;
+  vertical-align: top;
+}
+.login-form input[type="checkbox"] + label:hover {
+  color: #663d15;
+}
+.login-form input[type="checkbox"] + label::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000;
+}
+.login-form input[type="checkbox"]:checked + label::before {
+  background: url('../img/sprite.png') no-repeat;
+  background-position: 50% -104px;
+}
+/*Карта
+  ========================================================================== */
+.modal-content-map {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 766px;
+  height: 561px;
+  margin-left: -390px;
+  margin-top: -287.5px;
+  border: 7px solid white;
+  background: #e9e5dc url('../img/map.jpg');
+  box-shadow: 0 30px 50px rgba(0,0,0,.7);
+}
+/*==========================================================================
+  ПРАЙС
+  ========================================================================== */
+.content {
+  padding-top: 50px;
+  padding-bottom: 27px;
+}
+.main-title {
+  font-size: 48px;
+  width: 940px;
+  margin: 40px auto;
+  text-align: center;
+  position: relative;
+  margin-bottom: 35px;
+}
+.main-title:after,
+.main-title:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background: #000;
+  height: 2px;
+  position: absolute;
+  width: 160px;
+}
+.main-title:after {
+  right: 0;
+  top: 32px;
+}
+.main-title:before {
+  left: 0;
+  top: 32px;
+}
+.content-column-title {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.price-content {
+  margin-bottom: 42px;
+}
+.left-column {
+  float: left;
+  width: 460px;
+  padding-right: 10px;
+}
+.right-column {
+  float: right;
+  width: 460px;
+  padding-left: 10px;
+}
+.left-column p,
+.right-column p{
+  max-width: 380px;
+  line-height: 23px;
+}
+.products-description {
+  padding-left: 0;
+  padding-top: 13px;
+}
+.products-description li {
+  margin-bottom: 19px;
+  list-style-type: none;
+}
+.products-description li:before {
+  content: '';
+  display: inline-block;
+  vertical-align: baseline;
+  background-color: #000;
+  width: 8px;
+  height: 8px;
+  margin: 0 auto;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-right: 10px;
+}
+/*Таблица
+  ========================================================================== */
+.price-table td{
+  border: 3px solid #000;
+  width: 200px;
+  padding: 10px 17px;
+  background-color: #fff;
+}
+.price-table tr td:last-child{
+  text-align: center;
+}
+/*==========================================================================
+  МАГАЗИН
+  ========================================================================== */
+.shop-left-column {
+  float: left;
+}
+.shop-right-column {
+  float: right;
+  padding-top: 45px;
+}
+/*Фильтры
+  ========================================================================== */
+.filters {
+  width: 200px;
+  padding-top: 17px;
+}
+.filters label {
+  display: block;
+  margin-bottom: 20px;
+}
+.filters input[type="checkbox"],
+.filters input[type="radio"] {
+  display: none;
+}
+.filters label {
+  position: relative;
+  padding-left: 45px;
+  padding-top: 3px;
+  cursor: pointer;
+  vertical-align: top;
+  margin-bottom: 16px;
+}
+.filters label:hover {
+  color: #663d15;
+}
+.filters label::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000;
+}
+.brands input[type="checkbox"]:checked + label::before {
+  background: url('../img/sprite.png') no-repeat;
+  background-position: 50% -104px;
+}
+.groups {
+  padding-top: 15px;
+}
+.groups label::before {
+  border-radius: 50%;
+}
+.groups input[type="radio"]:checked + label::after {
+  content: '';
+  position: absolute;
+  top: 8.5px;
+  left: 6.5px;
+  width: 8.5px;
+  height: 8.5px;
+  background: #000;
+  border-radius: 50%;
+}
+input[type='submit'] {
+  margin-top: 37px;
+  padding: 12px 29px;
+}
+/*Товары
+  ========================================================================== */
+.goods {
+  width: 700px;
+}
+.goods-item {
+  display: inline-block;
+  width: 220px;
+  box-shadow: 0 0 10px 0 #ddd;
+  vertical-align: top;
+  background-color: #fff;
+  margin-right: 17px;
+  margin-bottom: 20px;
+}
+.goods-item:hover{
+  box-shadow: 0 0 20px 0 #bbb;
+}
+.goods-item:nth-child(3n) {
+  margin-right: 0;
+}
+.goods-name {
+  padding: 10px 17px 13px;
+}
+.goods-title {
+  margin: 0;
+}
+.goods-description {
+  text-transform: none;
+  font-size: 13px;
+}
+.goods-price {
+  display: inline-block;
+  width: 65px;
+  background-color: #e5e5e5;
+  margin-left: 15px;
+  padding: 13px 25px;
+  text-align: center;
+  margin-bottom: 15px;
+  vertical-align: top;
+}
+.goods-buy {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 13px 18px;
+  margin-left: -7px;
+}
+.goods-buy:hover {
+  background-color: #663d15;
+  cursor: pointer;
+}
+.goods-brand {
+  font-size: 13px;
+}
+/*Пагинация
+  ========================================================================== */
+.paginator {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 25px;
+  padding-bottom: 10px;
+}
+.paginator li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3px;
+}
+.paginator a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 13px 19px;
+}
+.paginator a:hover {
+  background-color: #663d15;
+}
+.paginator a.active {
+  background-color: #fff;
+  color: #000;
+}
+/*==========================================================================
+  ТОВАР
+  ========================================================================== */
+
+/*Галерея
+  ========================================================================== */
+.gallery {
+  margin-top: 43px;
+  float: left;
+  margin-bottom: 19px;
+  width: 460px;
+}
+.main-image {
+  box-shadow: 0 0 10px 0 #ddd;
+}
+.switch-image {
+  margin-top: 18px;
+}
+.preview-image {
+  margin-right: 17px;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+  box-shadow: 0 0 10px 0 #ddd;
+  font-size: 0;
+}
+.preview-image:last-child {
+  margin-right: 0;
+}
+.preview-image:hover {
+  box-shadow: 0 0 20px 0 #bbb;
+}
+/*Описание
+  ========================================================================== */
+.description {
+  float: right;
+  width: 390px;
+  margin-top: 43px;
+  padding-top: 20px;
+}
+.in-stock {
+  float: left;
+}
+.article {
+  float: right;
+  color: #aeaeae;
+}
+.description-text {
+  margin-top: 32px;
+  margin-bottom: 36px;
+  line-height: 24px;
+}
+.item-price {
+  margin-left: 0;
+}
+.description-kit-title {
+  margin-top: 45px;
+  font-size: 24px;
+}
+.list-default {
+  padding-left: 0;
+  margin-top: 30px;
+  list-style-type: none;
+}
+.list-default li {
+  margin-bottom: 6px;
+}
+.list-default li:before {
+  content: '';
+  display: inline-block;
+  vertical-align: baseline;
+  background-color: #000;
+  width: 8px;
+  height: 8px;
+  margin: 0 auto;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-right: 10px;
+}
+/*==========================================================================
+  ИКОНОЧНЫЙ ШРИФТ
+  ========================================================================== */
+@charset "UTF-8";
+
+ @font-face {
+  font-family: 'symbols-nerds';
+  src: url('../font/symbols-nerds.eot?27841936');
+  src: url('../font/symbols-nerds.eot?27841936#iefix') format('embedded-opentype'),
+       url('../font/symbols-nerds.woff?27841936') format('woff'),
+       url('../font/symbols-nerds.ttf?27841936') format('truetype'),
+       url('../font/symbols-nerds.svg?27841936#symbols-nerds') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-nerds';
+    src: url('../font/symbols-nerds.svg?27841936#symbols-nerds') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-nerds";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-basket:before { content: '\62'; } /* 'b' */
+.icon-fb:before { content: '\66'; } /* 'f' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-vk:before { content: '\76'; } /* 'v' */
+.icon-up-dir:before { content: '\25b2'; } /* '▲' */
+.icon-down-dir:before { content: '\25bc'; } /* '▼' */
+.icon-circle:before { content: '\25cb'; } /* '○' */
+.icon-circle-dot:before { content: '\25cf'; } /* '●' */
+.icon-check-off:before { content: '\2610'; } /* '☐' */
+.icon-check-on:before { content: '\2611'; } /* '☑' */
+.icon-instagram:before { content: '📷'; } /* '\1f4f7' */
